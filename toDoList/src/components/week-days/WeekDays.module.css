@@ -1,0 +1,12 @@
+.week-days {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.days {
+    width: 150px;
+    text-align: center;
+    font-size: x-large;
+    color: azure;
+}
