@@ -6,6 +6,19 @@
 .task {
     padding: 1px 15px;
     margin-bottom: 10px;
-    background-color: #1d1c1d;
+    background-color: rgb(0, 0, 0, 0.5);
     border-radius: 5px;
+}
+
+.task .time {
+    margin: 13px 0;
+}
+
+.task .description {
+    margin: 13px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
 }
