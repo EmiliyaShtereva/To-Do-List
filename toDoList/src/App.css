@@ -2,20 +2,3 @@
   background-color: #2d2c2d;
   color: azure;
 }
-
-.list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.day-list {
-  width: 100%;
-  margin: 5px;
-}
-
-.task {
-  padding: 1px 15px;
-  margin-bottom: 10px;
-  background-color: #1d1c1d;
-  border-radius: 5px;
-}
