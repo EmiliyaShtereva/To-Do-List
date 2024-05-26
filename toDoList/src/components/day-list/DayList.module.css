@@ -1,6 +1,24 @@
 .day-list {
     width: 100%;
     margin: 5px;
+    color: azure;
+}
+
+.day-list button {
+    width: 100%;
+    padding: 1px 15px;
+    margin-bottom: 10px;
+    padding: 7px;
+    font-size: larger;
+    color: azure;
+    background-color: rgb(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border: none;
+}
+
+.day-list button:hover {
+    background-color: rgb(0, 0, 0, 0.7);
+    cursor: pointer;
 }
 
 .task {
