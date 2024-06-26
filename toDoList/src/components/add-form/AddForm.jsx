@@ -7,6 +7,7 @@ export default function AddForm() {
             >
                 <button className={styles['close-btn']} type="button">&times;</button>
                 <div className={styles['container']}>
+                    <p className={styles['label']}>Time</p>
                     <input
                         type="text"
                         id="beginningTime"
@@ -21,6 +22,7 @@ export default function AddForm() {
                     />
                 </div>
                 <div className={styles['container']}>
+                    <p className={styles['label']}>Task</p>
                     <textarea
                         rows="5"
                         cols="10"
