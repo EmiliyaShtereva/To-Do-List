@@ -3,6 +3,7 @@ import styles from "./AddForm.module.css";
 export default function AddForm({onClose}) {
     return (
         <div className={styles['modal']}>
+            <div className={styles['backdrop']} onClick={onClose}></div>
             <form className={styles['form']}
             >
                 <button className={styles['close-btn']} type="button" onClick={onClose}>&times;</button>
