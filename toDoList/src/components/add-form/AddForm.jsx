@@ -1,11 +1,11 @@
 import styles from "./AddForm.module.css";
 
-export default function AddForm() {
+export default function AddForm({onClose}) {
     return (
         <div className={styles['modal']}>
             <form className={styles['form']}
             >
-                <button className={styles['close-btn']} type="button">&times;</button>
+                <button className={styles['close-btn']} type="button" onClick={onClose}>&times;</button>
                 <div className={styles['container']}>
                     <p className={styles['label']}>Time</p>
                     <input

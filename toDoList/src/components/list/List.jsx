@@ -8,6 +8,9 @@ export default function List() {
     const dayButtonClickHandler = () => {
         setShowForm(true);
     };
+    const closeClickHandler = () => {
+        setShowForm(false);
+    }
     return (
         <div className={styles["list"]}>
             <DayList
@@ -32,6 +35,7 @@ export default function List() {
                 onPlus={dayButtonClickHandler}
             />
 
+            {showForm && <AddForm onClose={closeClickHandler} />}
         </div>
     )
 }
