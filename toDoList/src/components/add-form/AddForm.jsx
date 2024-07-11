@@ -8,7 +8,7 @@ export default function AddForm({onClose}) {
             >
                 <button className={styles['close-btn']} type="button" onClick={onClose}>&times;</button>
                 <div className={styles['container']}>
-                    <p className={styles['label']}>Time</p>
+                    <p className={styles['label']}>Time:</p>
                     <input
                         type="text"
                         id="beginningTime"
@@ -23,7 +23,7 @@ export default function AddForm({onClose}) {
                     />
                 </div>
                 <div className={styles['container']}>
-                    <p className={styles['label']}>Task</p>
+                    <p className={styles['label']}>Task:</p>
                     <textarea
                         rows="5"
                         cols="10"
