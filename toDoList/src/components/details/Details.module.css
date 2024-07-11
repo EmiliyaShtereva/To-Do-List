@@ -1,0 +1,99 @@
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    padding-top: 150px;
+}
+
+.backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+.details {
+    position: absolute;
+    margin: auto;
+    padding: 20px;
+    z-index: 30;
+    width: 50rem;
+    border-radius: 7px;
+    color: rgba(240, 255, 255, 0.4);
+    background-color: #1c1c1c;
+}
+
+@media (min-width: 930px) {
+    .details {
+        width: 50rem;
+        left: calc(50% - 25rem);
+    }
+}
+
+.details .container {
+    padding: 0 30px;
+}
+
+.details .label {
+    margin: 1rem 0 5px 0;
+    font-size: x-large;
+}
+
+.details .time {
+    width: 20%;
+    font-size: larger;
+    padding: 5px 0;
+    margin: 8px 0;
+    color: azure;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.details .text {
+    width: 100%;
+    font-size: x-large;
+    padding: 5px 0;
+    margin: 8px 0;
+    color: azure;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.details .close-btn {
+    float: right;
+    background-color: transparent;
+    color: #3f3f3f;
+    font-size: 28px;
+    font-weight: bold;
+    border: none;
+}
+
+.details .close-btn:hover {
+    color: #6c0505;
+    cursor: pointer;
+}
+
+.details .edit-btn {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: #3f3f3f;
+    background-color: transparent;
+    border: none;
+}
+
+.details .edit-btn:hover {
+    color: #b8b8b8;
+    cursor: pointer;
+}
