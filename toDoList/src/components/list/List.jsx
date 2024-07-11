@@ -1,16 +1,23 @@
 import AddForm from "../add-form/AddForm";
 import DayList from "../day-list/DayList";
+import Details from "../details/Details";
 import Edit from "../edit/Edit";
 import styles from "./List.module.css";
 import { useState } from "react";
 
 export default function List() {
     const [showForm, setShowForm] = useState(false);
+    const [showDetails, setShowDetails] = useState(false);
     const [showEdit, setShowEdit] = useState(false);
     const dayButtonClickHandler = () => {
         setShowForm(true);
     };
-    const taskClickHandler = () => {
+    const detailsClickHandler = () => {
+        setShowDetails(true);
+        setShowEdit(false);
+    };
+    const editClickHandler = () => {
+        setShowDetails(false);
         setShowEdit(true);
     };
     const closeFormClickHandler = () => {
@@ -19,39 +26,43 @@ export default function List() {
     const closeEditClickHandler = () => {
         setShowEdit(false);
     }
+    const closeDettailsClickHandler = () => {
+        setShowDetails(false);
+    }
     return (
         <div className={styles["list"]}>
             <DayList
                 onPlus={dayButtonClickHandler}
-                onEdit={taskClickHandler}
+                onDetails={detailsClickHandler}
             />
             <DayList
                 onPlus={dayButtonClickHandler}
-                onEdit={taskClickHandler}
+                onDetails={detailsClickHandler}
             />
             <DayList
                 onPlus={dayButtonClickHandler}
-                onEdit={taskClickHandler}
+                onDetails={detailsClickHandler}
             />
             <DayList
                 onPlus={dayButtonClickHandler}
-                onEdit={taskClickHandler}
+                onDetails={detailsClickHandler}
             />
             <DayList
                 onPlus={dayButtonClickHandler}
-                onEdit={taskClickHandler}
+                onDetails={detailsClickHandler}
             />
             <DayList
                 onPlus={dayButtonClickHandler}
-                onEdit={taskClickHandler}
+                onDetails={detailsClickHandler}
             />
             <DayList
                 onPlus={dayButtonClickHandler}
-                onEdit={taskClickHandler}
+                onDetails={detailsClickHandler}
             />
 
             {showForm && <AddForm onClose={closeFormClickHandler} />}
-            {showEdit && <Edit onClose={closeEditClickHandler} />}
+            {showDetails && <Details onClose={closeDettailsClickHandler} onEdit={editClickHandler} />}
+            {showEdit && <Edit onClose={closeEditClickHandler} onDetails={detailsClickHandler} />}
         </div>
     )
 }
