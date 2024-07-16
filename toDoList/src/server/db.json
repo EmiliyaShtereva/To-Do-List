@@ -1,0 +1,112 @@
+{
+    "monday": [
+        {
+            "id": 1,
+            "startTime": "16:00",
+            "endtTime": "17:00",
+            "number": "Take a bath"
+        },
+        {
+            "id": 2,
+            "startTime": "10:00",
+            "endtTime": "12:00",
+            "number": "Shopping for dinner"
+        },
+        {
+            "id": 3,
+            "startTime": "12:00",
+            "endtTime": "14:00",
+            "number": "Walking the dog"
+        },
+        {
+            "id": 4,
+            "startTime": "13:00",
+            "endtTime": "18:00",
+            "number": "Cleaning the house"
+        }
+    ],
+    "tuesday": [
+    ],
+    "wednesday": [
+        {
+            "id": 1,
+            "startTime": "16:00",
+            "endtTime": "17:00",
+            "number": "Take a bath"
+        },
+        {
+            "id": 2,
+            "startTime": "10:00",
+            "endtTime": "12:00",
+            "number": "Shopping for dinner"
+        },
+        {
+            "id": 3,
+            "startTime": "12:00",
+            "endtTime": "14:00",
+            "number": "Walking the dog"
+        },
+        {
+            "id": 4,
+            "startTime": "13:00",
+            "endtTime": "18:00",
+            "number": "Cleaning the house"
+        }
+    ],
+    "thursday": [
+        {
+            "id": 1,
+            "startTime": "16:00",
+            "endtTime": "17:00",
+            "number": "Take a bath"
+        },
+        {
+            "id": 2,
+            "startTime": "10:00",
+            "endtTime": "12:00",
+            "number": "Shopping for dinner"
+        },
+        {
+            "id": 3,
+            "startTime": "12:00",
+            "endtTime": "14:00",
+            "number": "Walking the dog"
+        },
+        {
+            "id": 4,
+            "startTime": "13:00",
+            "endtTime": "18:00",
+            "number": "Cleaning the house"
+        }
+    ],
+    "friday": [
+        {
+            "id": 1,
+            "startTime": "16:00",
+            "endtTime": "17:00",
+            "number": "Take a bath"
+        },
+        {
+            "id": 2,
+            "startTime": "10:00",
+            "endtTime": "12:00",
+            "number": "Shopping for dinner"
+        },
+        {
+            "id": 3,
+            "startTime": "12:00",
+            "endtTime": "14:00",
+            "number": "Walking the dog"
+        },
+        {
+            "id": 4,
+            "startTime": "13:00",
+            "endtTime": "18:00",
+            "number": "Cleaning the house"
+        }
+    ],
+    "saturday": [
+    ],
+    "sunday": [
+    ]
+}
