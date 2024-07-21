@@ -11,13 +11,55 @@ export default function List() {
     const [showDetails, setShowDetails] = useState(false);
     const [showEdit, setShowEdit] = useState(false);
     const [mondayTasks, setMondayTasks] = useState([]);
+    const [tuesdayTasks, setTuesdayTasks] = useState([]);
+    const [wednesdayTasks, setWednesdayTasks] = useState([]);
+    const [thursdayTasks, setThursdayTasks] = useState([]);
+    const [fridayTasks, setFridayTasks] = useState([]);
+    const [saturdayTasks, setSaturdayTasks] = useState([]);
+    const [sundayTasks, setSundayTasks] = useState([]);
 
     useEffect(() => {
         tasksService.getMonday()
             .then(result => {
                 setMondayTasks(result);
             })
-            .catch(err => console.log(err))
+            .catch(err => console.log(err));
+
+        tasksService.getTuesday()
+            .then(result => {
+                setTuesdayTasks(result);
+            })
+            .catch(err => console.log(err));
+
+        tasksService.getWednesday()
+            .then(result => {
+                setWednesdayTasks(result);
+            })
+            .catch(err => console.log(err));
+
+        tasksService.getThursday()
+            .then(result => {
+                setThursdayTasks(result);
+            })
+            .catch(err => console.log(err));
+
+        tasksService.getFriday()
+            .then(result => {
+                setFridayTasks(result);
+            })
+            .catch(err => console.log(err));
+
+        tasksService.getSaturday()
+            .then(result => {
+                setSaturdayTasks(result);
+            })
+            .catch(err => console.log(err));
+
+        tasksService.getSunday()
+            .then(result => {
+                setSundayTasks(result);
+            })
+            .catch(err => console.log(err));
     }, []);
 
     const detailsClickHandler = () => {
@@ -40,32 +82,32 @@ export default function List() {
             <DayList
                 onPlus={() => setShowForm(true)}
                 onDetails={detailsClickHandler}
-                tasks={mondayTasks}
+                tasks={tuesdayTasks}
             />
             <DayList
                 onPlus={() => setShowForm(true)}
                 onDetails={detailsClickHandler}
-                tasks={mondayTasks}
+                tasks={wednesdayTasks}
             />
             <DayList
                 onPlus={() => setShowForm(true)}
                 onDetails={detailsClickHandler}
-                tasks={mondayTasks}
+                tasks={thursdayTasks}
             />
             <DayList
                 onPlus={() => setShowForm(true)}
                 onDetails={detailsClickHandler}
-                tasks={mondayTasks}
+                tasks={fridayTasks}
             />
             <DayList
                 onPlus={() => setShowForm(true)}
                 onDetails={detailsClickHandler}
-                tasks={mondayTasks}
+                tasks={saturdayTasks}
             />
             <DayList
                 onPlus={() => setShowForm(true)}
                 onDetails={detailsClickHandler}
-                tasks={mondayTasks}
+                tasks={sundayTasks}
             />
 
             {showForm && <AddForm onClose={() => setShowForm(false)} />}

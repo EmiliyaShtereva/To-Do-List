@@ -35,12 +35,6 @@
             "task": "Take a bath"
         },
         {
-            "id": 6,
-            "startTime": "10:00",
-            "endTime": "12:00",
-            "task": "Shopping for dinner"
-        },
-        {
             "id": 7,
             "startTime": "12:00",
             "endTime": "14:00",
@@ -54,12 +48,6 @@
         }
     ],
     "thursday": [
-        {
-            "id": 9,
-            "startTime": "16:00",
-            "endTime": "17:00",
-            "task": "Take a bath"
-        },
         {
             "id": 10,
             "startTime": "10:00",
@@ -97,6 +85,12 @@
             "startTime": "12:00",
             "endTime": "14:00",
             "task": "Walking the dog"
+        },
+        {
+            "id": 16,
+            "startTime": "13:00",
+            "endTime": "18:00",
+            "task": "Cleaning the house"
         },
         {
             "id": 16,
