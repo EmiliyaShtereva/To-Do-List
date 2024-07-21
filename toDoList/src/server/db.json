@@ -3,26 +3,26 @@
         {
             "id": 1,
             "startTime": "16:00",
-            "endtTime": "17:00",
-            "number": "Take a bath"
+            "endTime": "17:00",
+            "task": "Take a bath"
         },
         {
             "id": 2,
             "startTime": "10:00",
-            "endtTime": "12:00",
-            "number": "Shopping for dinner"
+            "endTime": "12:00",
+            "task": "Shopping for dinner"
         },
         {
             "id": 3,
             "startTime": "12:00",
-            "endtTime": "14:00",
-            "number": "Walking the dog"
+            "endTime": "14:00",
+            "task": "Walking the dog"
         },
         {
             "id": 4,
             "startTime": "13:00",
-            "endtTime": "18:00",
-            "number": "Cleaning the house"
+            "endTime": "18:00",
+            "task": "Cleaning the house"
         }
     ],
     "tuesday": [
@@ -31,78 +31,78 @@
         {
             "id": 5,
             "startTime": "16:00",
-            "endtTime": "17:00",
-            "number": "Take a bath"
+            "endTime": "17:00",
+            "task": "Take a bath"
         },
         {
             "id": 6,
             "startTime": "10:00",
-            "endtTime": "12:00",
-            "number": "Shopping for dinner"
+            "endTime": "12:00",
+            "task": "Shopping for dinner"
         },
         {
             "id": 7,
             "startTime": "12:00",
-            "endtTime": "14:00",
-            "number": "Walking the dog"
+            "endTime": "14:00",
+            "task": "Walking the dog"
         },
         {
             "id": 8,
             "startTime": "13:00",
-            "endtTime": "18:00",
-            "number": "Cleaning the house"
+            "endTime": "18:00",
+            "task": "Cleaning the house"
         }
     ],
     "thursday": [
         {
             "id": 9,
             "startTime": "16:00",
-            "endtTime": "17:00",
-            "number": "Take a bath"
+            "endTime": "17:00",
+            "task": "Take a bath"
         },
         {
             "id": 10,
             "startTime": "10:00",
-            "endtTime": "12:00",
-            "number": "Shopping for dinner"
+            "endTime": "12:00",
+            "task": "Shopping for dinner"
         },
         {
             "id": 11,
             "startTime": "12:00",
-            "endtTime": "14:00",
-            "number": "Walking the dog"
+            "endTime": "14:00",
+            "task": "Walking the dog"
         },
         {
             "id": 12,
             "startTime": "13:00",
-            "endtTime": "18:00",
-            "number": "Cleaning the house"
+            "endTime": "18:00",
+            "task": "Cleaning the house"
         }
     ],
     "friday": [
         {
             "id": 13,
             "startTime": "16:00",
-            "endtTime": "17:00",
-            "number": "Take a bath"
+            "endTime": "17:00",
+            "task": "Take a bath"
         },
         {
             "id": 14,
             "startTime": "10:00",
-            "endtTime": "12:00",
-            "number": "Shopping for dinner"
+            "endTime": "12:00",
+            "task": "Shopping for dinner"
         },
         {
             "id": 15,
             "startTime": "12:00",
-            "endtTime": "14:00",
-            "number": "Walking the dog"
+            "endTime": "14:00",
+            "task": "Walking the dog"
         },
         {
             "id": 16,
             "startTime": "13:00",
-            "endtTime": "18:00",
-            "number": "Cleaning the house"
+            "endTime": "18:00",
+            "task": "Cleaning the house"
         }
     ],
     "saturday": [
