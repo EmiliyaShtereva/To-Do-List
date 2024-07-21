@@ -9,9 +9,6 @@ export default function List() {
     const [showForm, setShowForm] = useState(false);
     const [showDetails, setShowDetails] = useState(false);
     const [showEdit, setShowEdit] = useState(false);
-    const dayButtonClickHandler = () => {
-        setShowForm(true);
-    };
     const detailsClickHandler = () => {
         setShowDetails(true);
         setShowEdit(false);
@@ -20,49 +17,42 @@ export default function List() {
         setShowDetails(false);
         setShowEdit(true);
     };
-    const closeFormClickHandler = () => {
-        setShowForm(false);
-    }
-    const closeEditClickHandler = () => {
-        setShowEdit(false);
-    }
-    const closeDettailsClickHandler = () => {
-        setShowDetails(false);
-    }
+
+
     return (
         <div className={styles["list"]}>
             <DayList
-                onPlus={dayButtonClickHandler}
+                onPlus={() => setShowForm(true)}
                 onDetails={detailsClickHandler}
             />
             <DayList
-                onPlus={dayButtonClickHandler}
+                onPlus={() => setShowForm(true)}
                 onDetails={detailsClickHandler}
             />
             <DayList
-                onPlus={dayButtonClickHandler}
+                onPlus={() => setShowForm(true)}
                 onDetails={detailsClickHandler}
             />
             <DayList
-                onPlus={dayButtonClickHandler}
+                onPlus={() => setShowForm(true)}
                 onDetails={detailsClickHandler}
             />
             <DayList
-                onPlus={dayButtonClickHandler}
+                onPlus={() => setShowForm(true)}
                 onDetails={detailsClickHandler}
             />
             <DayList
-                onPlus={dayButtonClickHandler}
+                onPlus={() => setShowForm(true)}
                 onDetails={detailsClickHandler}
             />
             <DayList
-                onPlus={dayButtonClickHandler}
+                onPlus={() => setShowForm(true)}
                 onDetails={detailsClickHandler}
             />
 
-            {showForm && <AddForm onClose={closeFormClickHandler} />}
-            {showDetails && <Details onClose={closeDettailsClickHandler} onEdit={editClickHandler} />}
-            {showEdit && <Edit onClose={closeEditClickHandler} onDetails={detailsClickHandler} />}
+            {showForm && <AddForm onClose={() => setShowForm(false)} />}
+            {showDetails && <Details onClose={() => setShowDetails(false)} onEdit={editClickHandler} />}
+            {showEdit && <Edit onClose={() => setShowEdit(false)} onDetails={detailsClickHandler} />}
         </div>
     )
 }
